@@ -1,0 +1,64 @@
+body { /* Hele siden */
+    background-color: black;
+    align-content: center;
+}
+header { /* Overskrift */
+    font-size: 44px;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: darkorange;
+}
+iframe { /* Filmen */
+    max-width: 300px;
+}
+h3 { /* Overskrift for den enkelte film */
+    font-size: 30px;
+    max-width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    font-family: 'Anton', bold, sans-serif;
+    color: orange;
+    text-align: center;
+}
+h3:hover {
+    color: darkorange;
+}
+p { /* Info om den enkelte film */
+    font-size: 14px;
+    font-family: 'Dosis', bold, sans-serif;
+    max-width: 300px;
+    padding-top: 5px;
+    color: orange;
+    text-align: left;
+}
+#root { /* Container */
+    display: flex;
+    flex-wrap: wrap;
+    top: 100px;
+    align-content: center;
+}
+
+/* ###### RESPONSIVE LAYOUT ###### */
+.column { /* Fire kolonner */
+    flex: 25%;
+    margin: 0px auto;
+    max-width: 300px;
+    min-height: 800px;
+    padding: 25px;
+    align-items: center;
+}
+@media (max-width: 800px) { /* To kolonner */
+    .column {
+        flex: 50%;
+        min-width: 300px;
+        margin: auto;
+    }
+}
+@media (max-width: 600px) { /* En kolonne */
+    .column {
+        flex: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+}
