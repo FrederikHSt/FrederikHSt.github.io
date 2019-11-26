@@ -1,5 +1,5 @@
 // OMDb API KEY
-let url = 'http://www.omdbapi.com/?apikey=a99024af&t=';
+let url = 'https://www.omdbapi.com/?apikey=a99024af&t=';
 // Json Data
 let jsMovie = {
     "movies": [
